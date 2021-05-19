@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function EmployeeCard(props) {
   return (
     <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">Image</th>
         <th scope="col">Name</th>
         <th scope="col">Phone #</th>
         <th scope="col">Email</th>
@@ -15,7 +15,7 @@ function FriendCard(props) {
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">{props.image}</th>
         <td>{props.name}</td>
         <td>{props.phone}</td>
         <td>{props.email}</td>
@@ -26,4 +26,4 @@ function FriendCard(props) {
   );
 }
 
-export default FriendCard;
+export default EmployeeCard;
