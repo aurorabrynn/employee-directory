@@ -1,24 +1,25 @@
-import React from "react";
-import './App.css';
+import React, { Component } from "react";
+import EmployeeCard from "./components/EmployeeCard";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+// import friends from "./friends.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  /* state = {
+    friends
+  }; */
+
+  render() {
+    return (
+      <Wrapper>
+        <Title>Employees</Title>
+        <EmployeeCard />
+        {/* {this.state.friends.map(friend => (
+          <EmployeeCard />
+        ))}*/}
+      </Wrapper>
+    );
+  }
 }
 
 export default App;

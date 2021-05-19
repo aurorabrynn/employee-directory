@@ -3,27 +3,26 @@ import "./style.css";
 
 function FriendCard(props) {
   return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-        </ul>
-      </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
-    </div>
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone #</th>
+        <th scope="col">Email</th>
+        <th scope="col">DOB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>{props.name}</td>
+        <td>{props.phone}</td>
+        <td>{props.email}</td>
+        <td>{props.dob}</td>
+      </tr>
+    </tbody>
+  </table>
   );
 }
 
