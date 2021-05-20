@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Employees</Title>
+        <Title>Employee Directory</Title>
         <Table />
       </Wrapper>
     );

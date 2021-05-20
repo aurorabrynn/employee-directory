@@ -15,7 +15,7 @@ class Table extends React.Component {
     }
     render() {
         return (
-            <table className="table">
+            <table className="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Image</th>
@@ -25,18 +25,21 @@ class Table extends React.Component {
                         <th scope="col">DOB</th>
                     </tr>
                 </thead>
-                {
-                    this.state.employee.map(person => (
-                        <EmployeeCard
-                            image={person.picture.thumbnail}
-                            first={person.name.first}
-                            last={person.name.last}
-                            phone={person.phone}
-                            email={person.email}
-                            dob={person.dob.date}
-                        />
-                    ))
-                } 
+                <tbody>
+                    {
+                        this.state.employee.map(person => (
+                            <EmployeeCard
+                                key={person.email}
+                                image={person.picture.thumbnail}
+                                first={person.name.first}
+                                last={person.name.last}
+                                phone={person.phone}
+                                email={person.email}
+                                dob={Moment(person.dob.date).format('MM-DD-YYYY')}
+                            />
+                        ))
+                    }
+                </tbody>
             </table>
         );
     }
