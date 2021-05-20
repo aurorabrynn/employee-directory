@@ -2,27 +2,17 @@ import React from "react";
 import "./style.css";
 
 function EmployeeCard(props) {
+  console.log("props:", props)
   return (
-    <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Image</th>
-        <th scope="col">Name</th>
-        <th scope="col">Phone #</th>
-        <th scope="col">Email</th>
-        <th scope="col">DOB</th>
-      </tr>
-    </thead>
     <tbody>
       <tr>
-        <th scope="row">{props.image}</th>
-        <td>{props.name}</td>
+        <th scope="row"><img src={props.image} /></th>
+        <td>{props.first} {props.last}</td>
         <td>{props.phone}</td>
         <td>{props.email}</td>
         <td>{props.dob}</td>
       </tr>
     </tbody>
-  </table>
   );
 }
 
