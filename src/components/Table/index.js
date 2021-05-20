@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import API from "../../utils/API";
 import EmployeeCard from "../EmployeeCard";
+import Moment from 'moment';
 
 class Table extends React.Component {
     state = {
