@@ -1,14 +1,12 @@
 import React from "react";
-import SearchForm from "./SearchForm";
 
-function Card() {
+function Card(props) {
   return (
-    <div className="card bg-light text-center">
-      <div className="card-body">
-        <SearchForm />
-        </div>
+    <div className="card text-center">
+      <div className="card-body">{props.children}</div>
     </div>
   );
 }
 
 export default Card;
+
