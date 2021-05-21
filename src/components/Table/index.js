@@ -5,7 +5,6 @@ import API from "../../utils/API";
 import EmployeeCard from "../EmployeeCard";
 import Container from "../Container";
 import Row from "../Row";
-//import Col from "../Col";
 import Card from "../Card";
 import SearchForm from "../SearchForm";
 
