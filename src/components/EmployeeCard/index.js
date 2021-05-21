@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 
 function EmployeeCard(props) {
   //console.log("props:", props)
