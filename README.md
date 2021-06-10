@@ -7,7 +7,7 @@ This is an employee or a user directory app, depending on what you use it for. H
 I learned a lot about React, and how to sort a table alphabetically.
 
 ## Screenshot
-![Screenshot]((https://user-images.githubusercontent.com/70443846/121448300-33e0cc80-c94c-11eb-9b5b-9719eceb560b.PNG)
+![Screenshot](https://user-images.githubusercontent.com/70443846/121448300-33e0cc80-c94c-11eb-9b5b-9719eceb560b.PNG)
 
 ## Link
 <a href="https://aurora-employee-directory.herokuapp.com/">Heroku Link</a>
